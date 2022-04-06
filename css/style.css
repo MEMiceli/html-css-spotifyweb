@@ -1,0 +1,38 @@
+
+/* reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+/* font */
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* studio macro aree */
+.container{
+    width: 100%;
+    
+}
+
+.clearfix{
+  content: "";
+  clear: both;
+  display: table;
+}
+header{
+    background-color: pink;
+    width: calc(100% - 250px);
+    height: 100px;
+    float: right;
+}
+
+aside{
+    width: 250px;
+    height: calc(100vh - 100px);
+    background: chartreuse;
+}
+footer{
+    background-color: cyan;
+    width: 100vw;
+    height: 100px;
+}
