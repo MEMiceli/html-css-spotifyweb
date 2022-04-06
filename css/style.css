@@ -34,6 +34,8 @@ ul{
   clear: both;
   display: table;
 }
+
+/* header  */
 header{
     background-color: rgba(0, 0, 0, 7);
     width: calc(100% - 250px);
@@ -42,6 +44,7 @@ header{
     text-align: right;
     line-height: 100px; 
 }
+/* aside  */
 
 aside{
     width: 250px;
@@ -52,15 +55,37 @@ aside{
 .inside-aside{
     margin-left: 15px;
 }
+
+/* top aside */
+
 .top-aside{
     height: 100px;
     padding: 20px 60px 15px 0;
     
 }
 
-.nav-top{
-    font-size: 20px;
+/* aside middle  */
+
+.inside-aside-middle{
+    line-height: 2;
 }
+.nav-top{
+    font-size: 18px;
+}
+
+.playlist{
+    margin-top: 20px;
+}
+.fa-plus{
+    background-color: silver;
+    color: black;
+    font-size: 20px;
+    padding: 8px;
+    text-align: center;
+    
+}
+
+/* aside bottom  */
 footer{
     background-color: cyan;
     width: 100vw;
