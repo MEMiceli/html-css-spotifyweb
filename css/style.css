@@ -53,7 +53,7 @@ aside{
     color: silver;
 }
 .inside-aside{
-    margin-left: 15px;
+    margin:0 15px 0 15px;
 }
 
 /* top aside */
@@ -68,9 +68,12 @@ aside{
 
 .inside-aside-middle{
     line-height: 2;
+    
+   
 }
 .nav-top{
     font-size: 18px;
+    
 }
 
 .playlist{
@@ -86,8 +89,39 @@ aside{
 }
 
 /* aside bottom  */
+
+.aside-bottom{
+    
+   /* da rivedere con calma  */
+
+}
 footer{
     background-color: cyan;
+    color: silver;
     width: 100vw;
     height: 100px;
+    display: flex;
+    justify-content: space-between;
+
+
 }
+
+/* footerh right */
+.footer-right, .preview{
+    background-color: brown;
+    display: flex;
+}
+.preview img{
+    height: 60px;
+}
+.icon, .description{
+    text-align: center;
+    line-height: 100px;
+}
+.footer-center{
+    background-color: rgb(42, 165, 48);
+}
+.footer-right{
+    background-color: rgb(85, 42, 165);
+}
+
