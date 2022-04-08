@@ -72,11 +72,11 @@ aside{
 .top-aside{
     height: 100px;
     padding: 20px 60px 15px 0;
-    flex-shrink: 0;
-    
-    
+    flex-shrink: 0;  
 }
-
+.hidden{
+    display: none;
+}
 /* aside middle  */
 
 .aside-middle{
@@ -217,9 +217,18 @@ footer{
     .vanish-xs{
         display: none;
     }
-    .aside{
-        width:20px;
+    .appear{
+        display: block;
+        width: 20px;
     }
-    
+    .aside{
+        width:50px;
+    }
+    .top-aside{
+        height: 20px;
+        padding: 2px 0 5px 0;
+    }
+    header{ 
+        width: calc(100% - 50px);
 }
     
