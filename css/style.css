@@ -59,9 +59,12 @@ aside{
     height: calc(100vh - 100px);
     background: rgb(1, 1, 1);
     color: silver;
+    
 }
 .inside-aside{
     margin:0 15px 0 15px;
+    display: flex;
+    flex-direction: column;
 }
 
 /* top aside */
@@ -69,19 +72,20 @@ aside{
 .top-aside{
     height: 100px;
     padding: 20px 60px 15px 0;
+    flex-shrink: 0;
+    
     
 }
 
 /* aside middle  */
 
-.inside-aside-middle{
+.aside-middle{
     line-height: 2;
-    
-   
+    flex-grow: 1;
+    overflow-y: auto;  
 }
 .nav-top{
-    font-size: 18px;
-    
+    font-size: 18px;  
 }
 
 .playlist{
@@ -99,9 +103,7 @@ aside{
 /* aside bottom  */
 
 .aside-bottom{
-    
-   /* da rivedere con calma  */
-
+    flex-shrink: 0;
 }
 /* grid */
 
@@ -130,7 +132,16 @@ aside{
 
     
 }  
-
+/* grid album */
+.albums{
+    display: flex;
+    flex-wrap: wrap;
+}
+.album{
+    width: calc((100% / 6) - 4px);
+    color: white;
+    text-align: center;
+}
 
 
 /* footer */
@@ -198,5 +209,17 @@ footer{
 } */
 
 .footer-left, .bottom-footer-center{
-    font-size: smaller;
+    font-size: smaller;    
 }
+
+@media screen and (max-width: 600px) {
+
+    .vanish-xs{
+        display: none;
+    }
+    .aside{
+        width:20px;
+    }
+    
+}
+    
