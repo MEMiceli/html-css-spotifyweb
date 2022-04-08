@@ -29,22 +29,30 @@ ul{
     width: 100%; 
 }
 
-.clearfix{
+/* .clearfix{
   content: "";
   clear: both;
   display: table;
-}
+} */
 
 /* header  */
 header{
     background-color: rgba(0, 0, 0, 7);
     width: calc(100% - 250px);
     height: 100px;
-    float: right;
+    /* float: right; */
+    position: fixed;
+    top: 0;
+    right: 0;
     text-align: right;
+    z-index: 10;
     line-height: 100px; 
 }
 /* aside  */
+
+main{
+    display: flex;
+}
 
 aside{
     width: 250px;
@@ -95,6 +103,37 @@ aside{
    /* da rivedere con calma  */
 
 }
+/* grid */
+
+.grid{
+    background-color: rgb(20, 25, 34);
+    margin-top: 100px;
+    width: calc(100% - 250px);
+    height: calc(100% - 200px);
+    float: right;
+}
+.main-buttons> li{
+    text-transform: uppercase;
+    padding: 20px;
+    font: inherit;
+    font-size: 16px;
+    color: silver;
+
+
+}
+.main-nav ul{
+    width: 100%;
+    display: flex;
+    flex-shrink: 1;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    
+}  
+
+
+
+/* footer */
 footer{
     background-color: black;
     color: silver;
@@ -112,9 +151,9 @@ footer{
     display: flex;
     
 }
-.preview{
+/* .preview{
 
-}
+} */
 .preview img{
     height: 50px;
     margin: auto;  
@@ -130,8 +169,8 @@ footer{
 /* footer center */
 
 /* .footer-center{
-    background-color: rgb(42, 165, 48); */
-}
+    background-color: rgb(42, 165, 48);
+} */
 .top-footer-center{
     text-align: center;
     letter-spacing: 15px;
@@ -142,11 +181,11 @@ footer{
     font-size: 30px;
     line-height: 50px;    
 }
-.bottom-footer-center{
-    /* display: flex; */
+/* .bottom-footer-center{
+    /* display: flex; 
 
     
-}
+}  */
 .barr{
     weight: 20px;
     height: 3px;
@@ -159,9 +198,5 @@ footer{
 } */
 
 .footer-left, .bottom-footer-center{
-    font-size: smaller;
-}
-
-.bottom-footer-center{
     font-size: smaller;
 }
