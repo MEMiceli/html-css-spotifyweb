@@ -82,12 +82,14 @@ aside{
 .aside-middle{
     line-height: 2;
     flex-grow: 1;
-    overflow-y: auto;  
 }
 .nav-top{
     font-size: 18px;  
 }
-
+.nav-middle{
+    max-height: 200px;
+    overflow-y: auto;  
+}
 .playlist{
     margin-top: 20px;
 }
@@ -221,7 +223,7 @@ footer{
         display: block;
         width: 20px;
     }
-    .aside{
+    aside{
         width:50px;
     }
     .top-aside{
@@ -230,5 +232,5 @@ footer{
     }
     header{ 
         width: calc(100% - 50px);
+    }
 }
-    
