@@ -37,10 +37,9 @@ ul{
 
 /* header  */
 header{
-    background-color: rgba(0, 0, 0, 7);
+    background-color: rgb(0, 0, 0);
     width: calc(100% - 250px);
     height: 100px;
-    /* float: right; */
     position: fixed;
     top: 0;
     right: 0;
@@ -119,7 +118,7 @@ aside{
     font-size: 16px;
     color: silver;
     max-height: 1000px;
-    overflow-y: auto;  
+    overflow-y: auto;
 }
 .main-buttons> li{
     text-transform: uppercase;
@@ -153,7 +152,8 @@ aside{
 /* footer */
 footer{
     background-color: black;
-    z-index: 10;
+    /* opacity: 1.0;
+    z-index: 10; */
     color: silver;
     width: 100%;
     height: 100px;
@@ -186,9 +186,12 @@ footer{
 
 /* footer center */
 
-/* .footer-center{
-    background-color: rgb(42, 165, 48);
-} */
+
+.footer-left, .bottom-footer-center{
+    font-size: smaller;
+    display: flex; 
+    
+}
 .top-footer-center{
     text-align: center;
     letter-spacing: 15px;
@@ -199,25 +202,15 @@ footer{
     font-size: 30px;
     line-height: 50px;    
 }
-/* .bottom-footer-center{
-    /* display: flex; 
-
-    
-}  */
 .barr{
-    weight: 20px;
+    margin:auto;
+    width: 190px;
     height: 3px;
     background-color: silver;
     border-radius: 20%;
 }
 
-/* .footer-right{
-    background-color: rgb(85, 42, 165);
-} */
-
-.footer-left, .bottom-footer-center{
-    font-size: smaller;    
-}
+/* media query */
 
 @media screen and (max-width: 600px){
     .vanish-xs{
@@ -247,6 +240,10 @@ footer{
 
 @media screen and (max-width: 700px){
     .album{
-        width: calc((100% / 2) - 10px);
+        width: calc((100% / 2) - 10px);   
     }  
+    .footer-left{
+        flex-wrap: wrap;
+
+    }
 }
